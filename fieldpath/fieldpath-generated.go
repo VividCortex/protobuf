@@ -7,7 +7,7 @@ package fieldpath
 import "io"
 import "unsafe"
 import "bytes"
-import descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
+import descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
 
 var _ = bytes.MinRead
 

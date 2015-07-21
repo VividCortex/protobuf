@@ -27,7 +27,7 @@
 syntax = "proto2";
 package defaultcheck;
 
-import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "github.com/VividCortex/protobuf/gogoproto/gogo.proto";
 
 message A {
 	extensions 1 to max;

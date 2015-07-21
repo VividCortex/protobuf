@@ -29,8 +29,8 @@
 package fieldpath_test
 
 import (
-	"github.com/gogo/protobuf/fieldpath"
-	"github.com/gogo/protobuf/test"
+	"github.com/VividCortex/protobuf/fieldpath"
+	"github.com/VividCortex/protobuf/test"
 	"reflect"
 	"testing"
 )

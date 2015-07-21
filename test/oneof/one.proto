@@ -28,7 +28,7 @@ syntax = "proto2";
 
 package one;
 
-import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "github.com/VividCortex/protobuf/gogoproto/gogo.proto";
 
 option (gogoproto.goproto_stringer_all) = false;
 option (gogoproto.goproto_enum_prefix_all) = false;

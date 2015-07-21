@@ -68,7 +68,7 @@ The following message:
   message B {
 	option (gogoproto.description) = true;
 	optional A A = 1 [(gogoproto.nullable) = false, (gogoproto.embed) = true];
-	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
+	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/VividCortex/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
   }
 
 given to the unmarshal plugin, will generate the following code:
@@ -177,10 +177,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/proto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/proto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/generator"
 )
 
 type unmarshal struct {
@@ -801,7 +801,7 @@ func (p *unmarshal) Generate(file *generator.FileDescriptor) {
 	p.mathPkg = p.NewImport("math")
 	p.unsafePkg = p.NewImport("unsafe")
 	fmtPkg := p.NewImport("fmt")
-	protoPkg := p.NewImport("github.com/gogo/protobuf/proto")
+	protoPkg := p.NewImport("github.com/VividCortex/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
 		protoPkg = p.NewImport("github.com/golang/protobuf/proto")
 	}

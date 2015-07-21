@@ -55,10 +55,10 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/proto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	plugin "github.com/gogo/protobuf/protoc-gen-gogo/plugin"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/proto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
+	plugin "github.com/VividCortex/protobuf/protoc-gen-gogo/plugin"
 )
 
 // A Plugin provides functionality to add to the output during Go code generation,
@@ -1201,7 +1201,7 @@ func (g *Generator) generateImports() {
 	// reference it later. The same argument applies to the math package,
 	// for handling bit patterns for floating-point numbers.
 	if gogoproto.ImportsGoGoProto(g.file.FileDescriptorProto) {
-		g.PrintImport(g.Pkg["proto"], g.ImportPrefix+"github.com/gogo/protobuf/proto")
+		g.PrintImport(g.Pkg["proto"], g.ImportPrefix+"github.com/VividCortex/protobuf/proto")
 	} else {
 		g.PrintImport(g.Pkg["proto"], g.ImportPrefix+"github.com/golang/protobuf/proto")
 	}

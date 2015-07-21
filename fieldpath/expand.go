@@ -30,8 +30,8 @@ package fieldpath
 
 import (
 	"fmt"
-	"github.com/gogo/protobuf/gogoproto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/VividCortex/protobuf/gogoproto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
 	"strings"
 )
 

@@ -13,11 +13,11 @@
 */
 package enumprefix
 
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/VividCortex/protobuf/proto"
 import math "math"
-import test "github.com/gogo/protobuf/test"
+import test "github.com/VividCortex/protobuf/test"
 
-// discarding unused import gogoproto "github.com/gogo/protobuf/gogoproto"
+// discarding unused import gogoproto "github.com/VividCortex/protobuf/gogoproto"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

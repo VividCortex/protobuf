@@ -29,7 +29,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/gogo/protobuf/protoc-gen-gogo/version"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/version"
 	"io/ioutil"
 	"os"
 	"os/exec"

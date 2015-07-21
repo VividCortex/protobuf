@@ -27,7 +27,7 @@
 syntax = "proto2";
 package embedconflict;
 
-import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "github.com/VividCortex/protobuf/gogoproto/gogo.proto";
 
 message A {
 	optional int64 Field1 = 1;

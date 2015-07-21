@@ -27,7 +27,7 @@
 package codec
 
 import (
-	"github.com/gogo/protobuf/test"
+	"github.com/VividCortex/protobuf/test"
 	"math/rand"
 	"testing"
 	"time"

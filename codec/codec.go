@@ -27,7 +27,7 @@
 package codec
 
 import (
-	"github.com/gogo/protobuf/proto"
+	"github.com/VividCortex/protobuf/proto"
 )
 
 type Codec interface {

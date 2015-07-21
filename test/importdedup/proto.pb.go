@@ -13,13 +13,13 @@ It has these top-level messages:
 */
 package importdedup
 
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/VividCortex/protobuf/proto"
 import math "math"
 
-// discarding unused import gogoproto "github.com/gogo/protobuf/gogoproto"
-import subpkg "github.com/gogo/protobuf/test/importdedup/subpkg"
+// discarding unused import gogoproto "github.com/VividCortex/protobuf/gogoproto"
+import subpkg "github.com/VividCortex/protobuf/test/importdedup/subpkg"
 
-import github_com_gogo_protobuf_test_importdedup_subpkg "github.com/gogo/protobuf/test/importdedup/subpkg"
+import github_com_gogo_protobuf_test_importdedup_subpkg "github.com/VividCortex/protobuf/test/importdedup/subpkg"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

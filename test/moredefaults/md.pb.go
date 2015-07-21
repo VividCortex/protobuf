@@ -14,11 +14,11 @@
 */
 package moredefaults
 
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/VividCortex/protobuf/proto"
 import math "math"
 
-// discarding unused import gogoproto "github.com/gogo/protobuf/gogoproto"
-import test "github.com/gogo/protobuf/test/example"
+// discarding unused import gogoproto "github.com/VividCortex/protobuf/gogoproto"
+import test "github.com/VividCortex/protobuf/test/example"
 
 import bytes "bytes"
 

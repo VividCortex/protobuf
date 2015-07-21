@@ -52,7 +52,7 @@ The following message:
   message B {
 	option (gogoproto.description) = true;
 	optional A A = 1 [(gogoproto.nullable) = false, (gogoproto.embed) = true];
-	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
+	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/VividCortex/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
   }
 
 given to the description plugin, will generate the following code:
@@ -75,9 +75,9 @@ package description
 
 import (
 	"fmt"
-	"github.com/gogo/protobuf/gogoproto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/VividCortex/protobuf/gogoproto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/generator"
 )
 
 type plugin struct {
@@ -139,7 +139,7 @@ func (p *plugin) Generate(file *generator.FileDescriptor) {
 
 func (this *plugin) GenerateImports(file *generator.FileDescriptor) {
 	if this.used {
-		this.P(`import google_protobuf "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"`)
+		this.P(`import google_protobuf "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"`)
 	}
 }
 

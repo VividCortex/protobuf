@@ -2,7 +2,7 @@ package google_protobuf
 
 import fmt "fmt"
 import strings "strings"
-import github_com_gogo_protobuf_proto "github.com/gogo/protobuf/proto"
+import github_com_gogo_protobuf_proto "github.com/VividCortex/protobuf/proto"
 import sort "sort"
 import strconv "strconv"
 import reflect "reflect"

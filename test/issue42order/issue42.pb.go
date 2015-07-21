@@ -14,10 +14,10 @@
 */
 package issue42
 
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/VividCortex/protobuf/proto"
 import math "math"
 
-// discarding unused import gogoproto "github.com/gogo/protobuf/gogoproto"
+// discarding unused import gogoproto "github.com/VividCortex/protobuf/gogoproto"
 
 import io "io"
 import fmt "fmt"

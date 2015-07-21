@@ -27,9 +27,9 @@
 package face
 
 import (
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/plugin/testgen"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/plugin/testgen"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/generator"
 )
 
 type test struct {

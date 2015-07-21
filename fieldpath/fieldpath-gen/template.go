@@ -888,7 +888,7 @@ func NewTopTemplate() string {
 	import "io"
 	import "unsafe"
 	import "bytes"
-	import descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
+	import descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
 	var _ = bytes.MinRead
 	`
 }
@@ -1247,9 +1247,9 @@ func NewTestTopTemplate() string {
 	
 	package fieldpath_test
 	import (
-		"github.com/gogo/protobuf/fieldpath"
-		"github.com/gogo/protobuf/proto"
-		"github.com/gogo/protobuf/test"
+		"github.com/VividCortex/protobuf/fieldpath"
+		"github.com/VividCortex/protobuf/proto"
+		"github.com/VividCortex/protobuf/test"
 		math_rand "math/rand"
 		"testing"
 		"time"

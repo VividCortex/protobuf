@@ -28,7 +28,7 @@ package test
 
 import (
 	"fmt"
-	"github.com/gogo/protobuf/proto"
+	"github.com/VividCortex/protobuf/proto"
 	"math"
 	"testing"
 )

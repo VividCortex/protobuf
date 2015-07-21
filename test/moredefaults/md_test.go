@@ -29,7 +29,7 @@ package moredefaults
 import (
 	"testing"
 
-	test "github.com/gogo/protobuf/test/example"
+	test "github.com/VividCortex/protobuf/test/example"
 )
 
 func TestDefaults(t *testing.T) {

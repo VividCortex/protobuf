@@ -13,11 +13,11 @@
 */
 package indeximport
 
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/VividCortex/protobuf/proto"
 import math "math"
-import index "github.com/gogo/protobuf/test/indeximport-issue72/index"
+import index "github.com/VividCortex/protobuf/test/indeximport-issue72/index"
 
-// discarding unused import gogoproto "github.com/gogo/protobuf/gogoproto"
+// discarding unused import gogoproto "github.com/VividCortex/protobuf/gogoproto"
 
 import io "io"
 import fmt "fmt"

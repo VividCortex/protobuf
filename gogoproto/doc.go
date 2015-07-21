@@ -59,12 +59,12 @@ The following message:
 
   package test;
 
-  import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+  import "github.com/VividCortex/protobuf/gogoproto/gogo.proto";
 
 	message A {
 		optional string Description = 1 [(gogoproto.nullable) = false];
 		optional int64 Number = 2 [(gogoproto.nullable) = false];
-		optional bytes Id = 3 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uuid", (gogoproto.nullable) = false];
+		optional bytes Id = 3 [(gogoproto.customtype) = "github.com/VividCortex/protobuf/test/custom.Uuid", (gogoproto.nullable) = false];
 	}
 
 Will generate a go struct which looks a lot like this:
@@ -84,7 +84,7 @@ Next we will embed the message A in message B.
 
 	message B {
 		optional A A = 1 [(gogoproto.nullable) = false, (gogoproto.embed) = true];
-		repeated bytes G = 2 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
+		repeated bytes G = 2 [(gogoproto.customtype) = "github.com/VividCortex/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
 	}
 
 See below that A is embedded in B.

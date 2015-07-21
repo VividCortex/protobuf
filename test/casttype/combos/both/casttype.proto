@@ -28,7 +28,7 @@ syntax = "proto2";
 
 package casttype;
 
-import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "github.com/VividCortex/protobuf/gogoproto/gogo.proto";
 
 option (gogoproto.goproto_stringer_all) = false;
 option (gogoproto.goproto_enum_prefix_all) = false;
@@ -57,10 +57,10 @@ option (gogoproto.unsafe_unmarshaler_all) = false;
 message Castaway {
 	optional int64 Int32Ptr = 1 [(gogoproto.casttype) = "int32"];
 	optional int64 Int32 = 2 [(gogoproto.nullable) = false, (gogoproto.casttype) = "int32"];
-	optional uint64 MyUint64Ptr = 3 [(gogoproto.casttype) = "github.com/gogo/protobuf/test/casttype.MyUint64Type"];
-	optional uint64 MyUint64 = 4 [(gogoproto.nullable) = false, (gogoproto.casttype) = "github.com/gogo/protobuf/test/casttype.MyUint64Type"];
-	optional bytes MyBytes = 5 [(gogoproto.casttype) = "github.com/gogo/protobuf/test/casttype.Bytes"];
+	optional uint64 MyUint64Ptr = 3 [(gogoproto.casttype) = "github.com/VividCortex/protobuf/test/casttype.MyUint64Type"];
+	optional uint64 MyUint64 = 4 [(gogoproto.nullable) = false, (gogoproto.casttype) = "github.com/VividCortex/protobuf/test/casttype.MyUint64Type"];
+	optional bytes MyBytes = 5 [(gogoproto.casttype) = "github.com/VividCortex/protobuf/test/casttype.Bytes"];
 	optional bytes NormalBytes = 6;
-	repeated uint64 MyUint64s = 7 [(gogoproto.casttype) = "github.com/gogo/protobuf/test/casttype.MyUint64Type"];
+	repeated uint64 MyUint64s = 7 [(gogoproto.casttype) = "github.com/VividCortex/protobuf/test/casttype.MyUint64Type"];
 }
 

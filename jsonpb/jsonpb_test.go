@@ -34,8 +34,8 @@ package jsonpb
 import (
 	"testing"
 
-	pb "github.com/gogo/protobuf/jsonpb/jsonpb_test_proto"
-	"github.com/gogo/protobuf/proto"
+	pb "github.com/VividCortex/protobuf/jsonpb/jsonpb_test_proto"
+	"github.com/VividCortex/protobuf/proto"
 )
 
 var (

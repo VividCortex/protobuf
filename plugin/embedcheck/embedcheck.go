@@ -45,8 +45,8 @@ package embedcheck
 
 import (
 	"fmt"
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/generator"
 	"os"
 )
 

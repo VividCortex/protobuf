@@ -1,8 +1,8 @@
 package required
 
 import (
-	"github.com/gogo/protobuf/proto"
-	"github.com/gogo/protobuf/test"
+	"github.com/VividCortex/protobuf/proto"
+	"github.com/VividCortex/protobuf/test"
 	"math/rand"
 	"reflect"
 	"strconv"

@@ -68,7 +68,7 @@ option (gogoproto.marshaler_all) = true;
 message B {
 	option (gogoproto.description) = true;
 	optional A A = 1 [(gogoproto.nullable) = false, (gogoproto.embed) = true];
-	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
+	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/VividCortex/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
 }
 
 given to the marshalto plugin, will generate the following code:
@@ -129,10 +129,10 @@ package marshalto
 
 import (
 	"fmt"
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/proto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/proto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/generator"
 	"sort"
 	"strconv"
 	"strings"
@@ -369,11 +369,11 @@ func (p *marshalto) Generate(file *generator.FileDescriptor) {
 	p.localName = generator.FileName(file)
 
 	mathPkg := p.NewImport("math")
-	protoPkg := p.NewImport("github.com/gogo/protobuf/proto")
+	protoPkg := p.NewImport("github.com/VividCortex/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
 		protoPkg = p.NewImport("github.com/golang/protobuf/proto")
 	}
-	sortKeysPkg := p.NewImport("github.com/gogo/protobuf/sortkeys")
+	sortKeysPkg := p.NewImport("github.com/VividCortex/protobuf/sortkeys")
 	p.unsafePkg = p.NewImport("unsafe")
 	p.errorsPkg = p.NewImport("errors")
 

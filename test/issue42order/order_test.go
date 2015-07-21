@@ -28,7 +28,7 @@ package issue42
 
 import (
 	"bytes"
-	"github.com/gogo/protobuf/proto"
+	"github.com/VividCortex/protobuf/proto"
 	math_rand "math/rand"
 	"testing"
 	time "time"

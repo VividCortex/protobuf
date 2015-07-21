@@ -27,7 +27,7 @@
 syntax = "proto2";
 package defaultcheck;
 
-import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "github.com/VividCortex/protobuf/gogoproto/gogo.proto";
 
 enum E {
 	P = 10;

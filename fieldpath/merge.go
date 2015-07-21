@@ -27,7 +27,7 @@
 package fieldpath
 
 import (
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
 	"strings"
 )
 

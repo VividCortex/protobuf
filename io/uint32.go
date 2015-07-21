@@ -30,7 +30,7 @@ package io
 
 import (
 	"encoding/binary"
-	"github.com/gogo/protobuf/proto"
+	"github.com/VividCortex/protobuf/proto"
 	"io"
 )
 

@@ -59,7 +59,7 @@ The following message:
   message B {
 	option (gogoproto.description) = true;
 	optional A A = 1 [(gogoproto.nullable) = false, (gogoproto.embed) = true];
-	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
+	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/VividCortex/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
   }
 
 given to the size plugin, will generate the following code:
@@ -117,10 +117,10 @@ package size
 
 import (
 	"fmt"
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/proto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/proto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/generator"
 	"strconv"
 	"strings"
 )
@@ -198,7 +198,7 @@ func (p *size) Generate(file *generator.FileDescriptor) {
 	p.PluginImports = generator.NewPluginImports(p.Generator)
 	p.atleastOne = false
 	p.localName = generator.FileName(file)
-	protoPkg := p.NewImport("github.com/gogo/protobuf/proto")
+	protoPkg := p.NewImport("github.com/VividCortex/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
 		protoPkg = p.NewImport("github.com/golang/protobuf/proto")
 	}

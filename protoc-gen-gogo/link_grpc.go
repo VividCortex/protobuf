@@ -31,4 +31,4 @@
 
 package main
 
-import _ "github.com/gogo/protobuf/plugin/grpc"
+import _ "github.com/VividCortex/protobuf/plugin/grpc"

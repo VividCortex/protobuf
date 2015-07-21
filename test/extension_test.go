@@ -27,7 +27,7 @@
 package test
 
 import (
-	"github.com/gogo/protobuf/proto"
+	"github.com/VividCortex/protobuf/proto"
 	"math"
 	math_rand "math/rand"
 	"testing"

@@ -20,14 +20,14 @@ package theproto3
 import testing "testing"
 import math_rand "math/rand"
 import time "time"
-import github_com_gogo_protobuf_proto "github.com/gogo/protobuf/proto"
-import github_com_gogo_protobuf_jsonpb "github.com/gogo/protobuf/jsonpb"
+import github_com_gogo_protobuf_proto "github.com/VividCortex/protobuf/proto"
+import github_com_gogo_protobuf_jsonpb "github.com/VividCortex/protobuf/jsonpb"
 import fmt "fmt"
 import go_parser "go/parser"
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/VividCortex/protobuf/proto"
 
-// discarding unused import gogoproto "github.com/gogo/protobuf/gogoproto"
-// discarding unused import test "github.com/gogo/protobuf/test/combos/both"
+// discarding unused import gogoproto "github.com/VividCortex/protobuf/gogoproto"
+// discarding unused import test "github.com/VividCortex/protobuf/test/combos/both"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

@@ -61,7 +61,7 @@ The following message:
 	option (gogoproto.goproto_getters) = false;
 	optional string Description = 1 [(gogoproto.nullable) = false];
 	optional int64 Number = 2 [(gogoproto.nullable) = false];
-	optional bytes Id = 3 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uuid", (gogoproto.nullable) = false];
+	optional bytes Id = 3 [(gogoproto.customtype) = "github.com/VividCortex/protobuf/test/custom.Uuid", (gogoproto.nullable) = false];
   }
 
 given to the face plugin, will generate the following code:
@@ -129,9 +129,9 @@ just the like TestProto method which is used to test the NewAFromFace function.
 package face
 
 import (
-	"github.com/gogo/protobuf/gogoproto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/VividCortex/protobuf/gogoproto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/generator"
 	"strings"
 )
 
@@ -167,7 +167,7 @@ func (p *plugin) GetMapGoType(file *descriptor.FileDescriptorProto, field *descr
 
 func (p *plugin) Generate(file *generator.FileDescriptor) {
 	p.PluginImports = generator.NewPluginImports(p.Generator)
-	protoPkg := p.NewImport("github.com/gogo/protobuf/proto")
+	protoPkg := p.NewImport("github.com/VividCortex/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
 		protoPkg = p.NewImport("github.com/golang/protobuf/proto")
 	}

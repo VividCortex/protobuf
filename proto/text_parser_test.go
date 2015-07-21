@@ -36,9 +36,9 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/gogo/protobuf/proto"
-	proto3pb "github.com/gogo/protobuf/proto/proto3_proto"
-	. "github.com/gogo/protobuf/proto/testdata"
+	. "github.com/VividCortex/protobuf/proto"
+	proto3pb "github.com/VividCortex/protobuf/proto/proto3_proto"
+	. "github.com/VividCortex/protobuf/proto/testdata"
 )
 
 type UnmarshalTextTest struct {

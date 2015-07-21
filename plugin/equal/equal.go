@@ -61,7 +61,7 @@ The following message:
 
   message B {
 	optional A A = 1 [(gogoproto.nullable) = false, (gogoproto.embed) = true];
-	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/gogo/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
+	repeated bytes G = 2 [(gogoproto.customtype) = "github.com/VividCortex/protobuf/test/custom.Uint128", (gogoproto.nullable) = false];
   }
 
 given to the equal plugin, will generate the following code:
@@ -161,8 +161,8 @@ and the following test code:
 package equal
 
 import (
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/protoc-gen-gogo/generator"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/protoc-gen-gogo/generator"
 )
 
 type plugin struct {

@@ -7,9 +7,9 @@ package fieldpath_test
 import (
 	"bytes"
 	"fmt"
-	"github.com/gogo/protobuf/fieldpath"
-	"github.com/gogo/protobuf/proto"
-	"github.com/gogo/protobuf/test"
+	"github.com/VividCortex/protobuf/fieldpath"
+	"github.com/VividCortex/protobuf/proto"
+	"github.com/VividCortex/protobuf/test"
 	math_rand "math/rand"
 	"reflect"
 	"sort"

@@ -29,9 +29,9 @@
 package vanity
 
 import (
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/proto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/proto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
 	"strings"
 )
 

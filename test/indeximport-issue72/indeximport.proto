@@ -28,8 +28,8 @@ syntax = "proto2";
 
 package indeximport;
 
-import "github.com/gogo/protobuf/test/indeximport-issue72/index/index.proto";
-import "github.com/gogo/protobuf/gogoproto/gogo.proto";
+import "github.com/VividCortex/protobuf/test/indeximport-issue72/index/index.proto";
+import "github.com/VividCortex/protobuf/gogoproto/gogo.proto";
 
 option (gogoproto.marshaler_all) = true;
 option (gogoproto.sizer_all) = true;

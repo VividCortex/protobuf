@@ -28,7 +28,7 @@ package issue34
 
 import (
 	"bytes"
-	"github.com/gogo/protobuf/proto"
+	"github.com/VividCortex/protobuf/proto"
 	"testing"
 )
 

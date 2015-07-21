@@ -33,10 +33,10 @@ import (
 	"go/token"
 	"strings"
 
-	"github.com/gogo/protobuf/gogoproto"
-	"github.com/gogo/protobuf/proto"
-	descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
-	plugin "github.com/gogo/protobuf/protoc-gen-gogo/plugin"
+	"github.com/VividCortex/protobuf/gogoproto"
+	"github.com/VividCortex/protobuf/proto"
+	descriptor "github.com/VividCortex/protobuf/protoc-gen-gogo/descriptor"
+	plugin "github.com/VividCortex/protobuf/protoc-gen-gogo/plugin"
 	"path"
 )
 

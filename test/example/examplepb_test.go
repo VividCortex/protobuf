@@ -22,14 +22,14 @@ package test
 import testing "testing"
 import math_rand "math/rand"
 import time "time"
-import github_com_gogo_protobuf_proto "github.com/gogo/protobuf/proto"
-import github_com_gogo_protobuf_jsonpb "github.com/gogo/protobuf/jsonpb"
+import github_com_gogo_protobuf_proto "github.com/VividCortex/protobuf/proto"
+import github_com_gogo_protobuf_jsonpb "github.com/VividCortex/protobuf/jsonpb"
 import fmt "fmt"
 import go_parser "go/parser"
-import proto "github.com/gogo/protobuf/proto"
+import proto "github.com/VividCortex/protobuf/proto"
 import math "math"
 
-// discarding unused import gogoproto "github.com/gogo/protobuf/gogoproto"
+// discarding unused import gogoproto "github.com/VividCortex/protobuf/gogoproto"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

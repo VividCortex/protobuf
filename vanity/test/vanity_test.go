@@ -29,9 +29,9 @@
 package test
 
 import (
-	fast "github.com/gogo/protobuf/vanity/test/fast"
-	faster "github.com/gogo/protobuf/vanity/test/faster"
-	slick "github.com/gogo/protobuf/vanity/test/slick"
+	fast "github.com/VividCortex/protobuf/vanity/test/fast"
+	faster "github.com/VividCortex/protobuf/vanity/test/faster"
+	slick "github.com/VividCortex/protobuf/vanity/test/slick"
 	"testing"
 )
 
